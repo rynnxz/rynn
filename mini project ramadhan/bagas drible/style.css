@@ -1,0 +1,33 @@
+body {
+    background: url('bckground.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 98vh;
+    overflow: hidden;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+.header {
+    text-align: center;
+    filter: drop-shadow(0 4px 10px rgb(0,0,0));
+}
+
+.bagas img {
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 4px 10px rgb(0,0,0));
+}
+
+#score {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+@media (max-width:550px) {
+    .bagas img {
+        width: 300px;
+    }
+}

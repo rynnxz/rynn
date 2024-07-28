@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Buka Puasa</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #250028;
+        color: #fff;
+    }
+
+    #countdown {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        text-align: center;
+    }
+
+    select {
+        font-size: 1.3rem;
+    }
+    
+    label {
+        font-weight: 700;
+    }
+
+    div {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    @media (max-width:430) {
+        div {
+            font-size: .6rem;
+        }
+
+        select {
+            font-size: .9rem;
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Countdown buka puasa!</h2>
+        <!-- <h2>Magrib</h2> -->
+        <label for="zona">Pilih Kota</label>
+        <select name="zona" id="zona">
+            <optgroup label="Sumatera">
+                <option value="Medan" selected>Medan</option>
+                <option value="Banda Aceh">Banda Aceh</option>
+                <option value="Palembang">Palembang</option>
+                <option value="Padang">Padang</option>
+                <option value="Bengkulu">Bengkulu</option>
+                <option value="Pekanbaru">Pekanbaru</option>
+                <option value="Jambi">Jambi</option>
+                <option value="Bandar Lampung">Bandar Lampung</option>
+                <option value="Pangkal Pinang">Pangkal Pinang</option>
+            </optgroup>
+
+            <optgroup label="Jawa">
+                <option value="Serang">Serang</option>
+                <option value="Jakarta">Jakarta</option>
+                <option value="Bandung">Bandung</option>
+                <option value="Semarang">Semarang</option>
+                <option value="Yogyakarta">Yogyakarta</option>
+                <option value="Surabaya">Surabaya</option>
+            </optgroup>
+
+            <optgroup label="Bali">
+                <option value="Denpasar">Denpasar</option>
+            </optgroup>
+
+            <optgroup label="Kalimantan">
+                <option value="Pontianak">Pontianak</option>
+                <option value="Samarinda">Samarinda</option>
+                <option value="Banjarbaru">Banjarbaru</option>
+                <option value="Palangkaraya">Palangkaraya</option>
+                <option value="Tanjung Selor">Tanjung Selor</option>
+            </optgroup>
+
+            <optgroup label="Sulawesi">
+                <option value="Gorontalo">Gorontalo</option>
+                <option value="Mamuju">Mamuju</option>
+                <option value="Palu">Palu</option>
+                <option value="Manado">Manado</option>
+                <option value="Kendari">Kendari</option>
+                <option value="Makassar">Makassar</option>
+            </optgroup>
+
+            <optgroup label="Nusa Tenggara">
+                <option value="Mataram">Mataram</option>
+                <option value="Kupang">Kupang</option>
+            </optgroup>
+
+            <optgroup label="Maluku">
+                <option value="Sofifi">Sofifi</option>
+                <option value="Ambon">Ambon</option>
+            </optgroup>
+
+            <optgroup label="Papua">
+                <option value="Jayapura">Jayapura</option>
+                <option value="Manokwari">Manokwari</option>
+                <option value="Merauke">Merauke</option>
+                <option value="Sorong">Sorong</option>
+                <option value="Jayawijaya">Jayawijaya</option>
+            </optgroup>
+        </select>
+
+        <h3>Sekarang jam : <span id="now"></span></h3>
+        <div id="buka"></div>
+        <div id="countdown"></div>
+
+        <audio src="adzan.mp3" id="adzan"></audio>
+    </div>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
